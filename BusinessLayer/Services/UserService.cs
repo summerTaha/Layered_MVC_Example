@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    public class UserService : BaseCrudService<UserDto,User>
+    public class UserService : BaseCrudService<UserDto,User> , IUserService
     {
         public UserService(IRepository<User> repo) : base(repo)
         {
@@ -51,5 +51,7 @@ namespace BusinessLayer.Services
                 CreatedDate = t.CreatedDate,
             }).ToList();
         }
+        
+        //protected override 
     }
 }
