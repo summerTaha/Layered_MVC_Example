@@ -52,6 +52,11 @@ namespace BusinessLayer.Services
             }).ToList();
         }
         
-        //protected override 
+        public Task SendEmail(User user)
+        {
+            // do SendEmail logic
+
+            return Task.CompletedTask;
+        }
     }
 }
