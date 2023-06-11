@@ -12,10 +12,12 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<ICrudService<UserDto>, UserService>();
 builder.Services.AddScoped<ICrudService<CategoryDto>, CategoryService>();
+builder.Services.AddScoped<ICrudService<CountryDto>, CountryService>();
 
 var app = builder.Build();
 
