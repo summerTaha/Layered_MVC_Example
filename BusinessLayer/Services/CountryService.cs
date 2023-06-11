@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Services
 {
-    public class CategoryService : BaseCrudService<CountryDto, Country>
+    public class CountryService : BaseCrudService<CountryDto, Country>
     {
-        public CategoryService(IRepository<Country> repo) : base(repo)
+        public CountryService(IRepository<Country> repo) : base(repo)
         {
         }
 
