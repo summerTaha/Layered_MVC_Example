@@ -16,6 +16,19 @@ namespace BusinessLayer.Services
         public UserService(IRepository<User> repo) : base(repo)
         {
         }
+        
+        public Task SendEmail(User user)
+        {
+            // do SendEmail logic
+            
+           // string ToAddress =user.Email;
+           // string subject="";
+           // string body="";
+           
+           // the code to send email using SMTP server
+
+            
+        }
 
         protected override User MapToModel(UserDto userDto)
         {
@@ -52,17 +65,6 @@ namespace BusinessLayer.Services
             }).ToList();
         }
         
-        public Task SendEmail(User user)
-        {
-            // do SendEmail logic
-            
-           // string ToAddress =user.EmailAdress;
-           // string subject="";
-           // string body="";
-           
-           // the code to send email using SMTP server
-
-            
-        }
+        
     }
 }
