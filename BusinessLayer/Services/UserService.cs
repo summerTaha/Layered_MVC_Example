@@ -55,8 +55,14 @@ namespace BusinessLayer.Services
         public Task SendEmail(User user)
         {
             // do SendEmail logic
+            
+           // string ToAddress =user.EmailAdress;
+           // string subject="";
+           // string body="";
+           
+           // the code to send email using SMTP server
 
-            return Task.CompletedTask;
+            
         }
     }
 }
